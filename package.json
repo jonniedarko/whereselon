@@ -1,0 +1,20 @@
+{
+  "name": "whereselon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx esbuild src/app.tsx --bundle --servedir=www/ --outdir=www/js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "esbuild": "^0.14.38",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-twitter-embed": "^4.0.4"
+  }
+}

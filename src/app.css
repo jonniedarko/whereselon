@@ -1,0 +1,50 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root > div {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --dark-bg-color: #292f33;
+  --dark-text-color: #fff;
+  --light-bg-color: #fff;
+  --light-text-color: #000;
+
+  /* defaults to light mode */
+  --main-bg-color: var(--light-bg-color);
+  --main-text-color: var(--light-text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg-color: var(--dark-bg-color);
+    --main-text-color: var(--dark-text-color);
+  }
+}
+* {
+  font-family: Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  font-size: 55px;
+  margin: 20px 50px;
+  justify-content: center;
+}
+
+.header img {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  vertical-align: middle;
+}
